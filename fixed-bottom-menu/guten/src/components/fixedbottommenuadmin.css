@@ -1,0 +1,66 @@
+.boxRowContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: calc(8px);
+}
+div.components-base-control {
+  margin-bottom: 0;
+}
+div.components-base-control__field {
+  display: flex;
+  margin-bottom: 0 !important;
+}
+div.components-v-stack {
+  flex-direction: row !important;
+}
+div.components-radio-control__option {
+  padding-right: calc(16px);
+}
+.icon_string {
+  width: 200px;
+}
+.url_string {
+  width: 80%;
+}
+.text_string {
+  width: 200px;
+}
+table {
+  border-collapse: collapse;
+}
+.aStyle {
+  text-decoration: none;
+}
+div.inner-paragraph1 {
+  padding: 5px;
+}
+div.inner-paragraph2 {
+  margin: 0 100px 10px;
+}
+div.inner-paragraph3 {
+  margin: 5px;
+  padding: 5px;
+}
+.inner-paragraph3 > ul > li {
+  list-style-position: inside;
+  list-style-type : disc;
+  margin-left: 0.9em;
+  text-indent: -0.9em;
+}
+.range_bar {
+  width: 200px;
+}
+.detailsStyle {
+  margin-bottom: 5px;
+}
+.summaryStyle {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #f4f4f4;
+  color: #000;
+}
+.detailsdivStyle {
+  display: block;
+  padding:5px 20px;
+}

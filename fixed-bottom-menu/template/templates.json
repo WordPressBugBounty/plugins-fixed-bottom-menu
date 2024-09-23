@@ -1,0 +1,82 @@
+{
+  "templates": [
+    {
+      "slug": "default",
+      "name": "Default template",
+      "description" : "This is default template. Display at the bottom.",
+      "version": "1.02",
+      "author": "Katsushi Kawamori",
+      "author_link": "https://profiles.wordpress.org/katsushi-kawamori/",
+      "files": {
+        "template_html": "fixedbottommenu-template-html.php",
+        "template_css": "fixedbottommenu-template-css.php",
+        "css": "fixedbottommenu.css"
+      }
+    },
+    {
+      "slug": "old",
+      "name": "Old template",
+      "description" : "This is old template. Display at the bottom.",
+      "version": "1.02",
+      "author": "Katsushi Kawamori",
+      "author_link": "https://profiles.wordpress.org/katsushi-kawamori/",
+      "files": {
+        "template_html": "fixedbottommenu-template-html-old.php",
+        "template_css": "fixedbottommenu-template-css-old.php",
+        "css": "fixedbottommenu-old.css"
+      }
+    },
+    {
+      "slug": "right",
+      "name": "Right template",
+      "description" : "Display at the right.",
+      "version": "1.00",
+      "author": "Katsushi Kawamori",
+      "author_link": "https://profiles.wordpress.org/katsushi-kawamori/",
+      "files": {
+        "template_html": "fixedbottommenu-template-html-right.php",
+        "template_css": "fixedbottommenu-template-css-right.php",
+        "css": "fixedbottommenu-right.css"
+      }
+    },
+    {
+      "slug": "top",
+      "name": "Top template",
+      "description" : "Display at the top.",
+      "version": "1.00",
+      "author": "Katsushi Kawamori",
+      "author_link": "https://profiles.wordpress.org/katsushi-kawamori/",
+      "files": {
+        "template_html": "fixedbottommenu-template-html-top.php",
+        "template_css": "fixedbottommenu-template-css-top.php",
+        "css": "fixedbottommenu-top.css"
+      }
+	},
+    {
+      "slug": "left",
+      "name": "Left template",
+      "description" : "Display at the left.",
+      "version": "1.00",
+      "author": "Katsushi Kawamori",
+      "author_link": "https://profiles.wordpress.org/katsushi-kawamori/",
+      "files": {
+        "template_html": "fixedbottommenu-template-html-left.php",
+        "template_css": "fixedbottommenu-template-css-left.php",
+        "css": "fixedbottommenu-left.css"
+      }
+    },
+    {
+      "slug": "bottomright",
+      "name": "Bottom and Right template",
+      "description" : "It is displayed at the bottom when the screen is narrow and at the right when the screen is wide. Switching depends on the value of [Max Width].",
+      "version": "1.00",
+      "author": "Katsushi Kawamori",
+      "author_link": "https://profiles.wordpress.org/katsushi-kawamori/",
+      "files": {
+        "template_html": "fixedbottommenu-template-html-bottomright.php",
+        "template_css": "fixedbottommenu-template-css-bottomright.php",
+        "css": "fixedbottommenu-bottomright.css"
+      }
+    }
+  ]
+}
