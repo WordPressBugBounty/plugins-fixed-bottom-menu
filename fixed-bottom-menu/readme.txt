@@ -4,8 +4,8 @@ Donate link: https://shop.riverforest-wp.info/donate/
 Tags: fixed, menu
 Requires at least: 5.0
 Requires PHP: 8.0
-Tested up to: 6.6
-Stable tag: 2.08
+Tested up to: 6.7
+Stable tag: 2.09
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -119,6 +119,9 @@ none
 3. Edit settings
 
 == Changelog ==
+
+= [2.09] 2024/11/10 =
+Fix – Rebuilt javascript.
 
 = [2.08] 2024/04/21 =
 * Fix - Translation.
