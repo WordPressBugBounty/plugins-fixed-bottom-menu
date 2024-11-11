@@ -100,10 +100,15 @@ class FixedBottomMenuAdmin {
 			wp_die( esc_html__( 'You do not have sufficient permissions to access this page.' ) );
 		}
 
-		printf(
-			'<div class="wrap" id="fixed-bottom-menu-settings">%s</div>',
-			esc_html__( 'Loading…', 'fixed-bottom-menu' )
-		);
+		global $wp_version;
+		$requires = '6.6';
+		if ( version_compare( $wp_version, $requires, '>=' ) ) {
+			$admin_screen = esc_html__( 'Loading…', 'fixed-bottom-menu' );
+		} else {
+			/* translators: WordPress requires version */
+			$admin_screen = sprintf( esc_html__( 'WordPress %s or higher is required to view this screen.', 'fixed-bottom-menu' ), $requires );
+		}
+		printf( '<div class="wrap" id="fixed-bottom-menu-settings">%s</div>', esc_html( $admin_screen ) );
 	}
 
 	/** ==================================================
