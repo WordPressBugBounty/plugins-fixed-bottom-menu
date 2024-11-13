@@ -272,6 +272,7 @@ const FixedBottomMenuAdmin = () => {
 								onChange = { ( value ) => updateaddonType( value ) }
 							/>
 						</div>
+						<hr />
 						<div className="inner-paragraph3">
 							<strong>Dashicons</strong>
 							<a className="aStyle" href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noopener noreferrer"><span class="dashicons dashicons-external"></span>
