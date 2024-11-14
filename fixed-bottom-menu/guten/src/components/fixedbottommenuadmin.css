@@ -32,6 +32,12 @@ div.inner-paragraph3 {
 .range_bar {
   width: 200px;
 }
+.range-width {
+  width: 220px;
+}
+.unit-width {
+  width: 60px;
+}
 .detailsStyle {
   margin-bottom: 5px;
 }
