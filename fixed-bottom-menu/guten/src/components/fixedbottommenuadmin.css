@@ -1,3 +1,9 @@
+div.components-v-stack {
+	flex-direction: row !important;
+}
+div.components-radio-control__option {
+	padding-right: calc(16px);
+}
 .icon_string {
   width: 200px;
 }
@@ -33,10 +39,10 @@ div.inner-paragraph3 {
   width: 200px;
 }
 .range-width {
-  width: 220px;
+  width: 250px;
 }
 .unit-width {
-  width: 60px;
+  width: 250px;
 }
 .detailsStyle {
   margin-bottom: 5px;
