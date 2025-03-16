@@ -67,21 +67,26 @@ class FixedBottomMenu {
 	 */
 	public function bottom_menu() {
 
-		list( $template_html_file_name, $template_css_file_name, $css_file_name ) = $this->select_template( get_option( 'fixedbottommenu_template', 'default' ) );
+		$hide = false;
+		$hide = apply_filters( 'fbm_hide', $hide );
 
-		$template_html_file = apply_filters( 'fixed_bottom_menu_generate_template_html_file', plugin_dir_path( __DIR__ ) . 'template/' . $template_html_file_name );
+		if ( ! $hide ) {
+			list( $template_html_file_name, $template_css_file_name, $css_file_name ) = $this->select_template( get_option( 'fixedbottommenu_template', 'default' ) );
 
-		$icon_type = $this->icon_filters();
+			$template_html_file = apply_filters( 'fixed_bottom_menu_generate_template_html_file', plugin_dir_path( __DIR__ ) . 'template/' . $template_html_file_name );
 
-		$this->column = apply_filters( 'fbm_column', $this->column );
-		$columns = $this->column;
+			$icon_type = $this->icon_filters();
 
-		ob_start();
-		include $template_html_file;
-		$contents = ob_get_contents();
-		ob_end_clean();
+			$this->column = apply_filters( 'fbm_column', $this->column );
+			$columns = $this->column;
 
-		echo wp_kses_post( $contents );
+			ob_start();
+			include $template_html_file;
+			$contents = ob_get_contents();
+			ob_end_clean();
+
+			echo wp_kses_post( $contents );
+		}
 	}
 
 	/** ==================================================
@@ -115,28 +120,30 @@ class FixedBottomMenu {
 	 */
 	public function load_localize_styles() {
 
-		list( $template_html_file_name, $template_css_file_name, $css_file_name ) = $this->select_template( get_option( 'fixedbottommenu_template', 'default' ) );
-
-		$css_url = apply_filters( 'fixed_bottom_menu_css_url', plugin_dir_url( __DIR__ ) . 'template/' . $css_file_name );
-		wp_enqueue_style( 'fixed-bottom-menu', $css_url, array(), '1.00' );
-
-		list( $fontsize, $fontsize_num, $fontsize_unit, $backcolor, $color, $overcolor, $minwidth, $zindex, $height, $height_a, $padding_top_a, $footer_class ) = $this->option_filters();
-
-		$this->column = apply_filters( 'fbm_column', $this->column );
-		$columns = $this->column;
-		$text_class = 'fixed-bottom-menu-text';
-
 		$hide = false;
 		$hide = apply_filters( 'fbm_hide', $hide );
 
-		$template_css_file = apply_filters( 'fixed_bottom_menu_generate_template_css_file', plugin_dir_path( __DIR__ ) . 'template/' . $template_css_file_name );
+		if ( ! $hide ) {
+			list( $template_html_file_name, $template_css_file_name, $css_file_name ) = $this->select_template( get_option( 'fixedbottommenu_template', 'default' ) );
 
-		ob_start();
-		include $template_css_file;
-		$contents = ob_get_contents();
-		ob_end_clean();
+			$css_url = apply_filters( 'fixed_bottom_menu_css_url', plugin_dir_url( __DIR__ ) . 'template/' . $css_file_name );
+			wp_enqueue_style( 'fixed-bottom-menu', $css_url, array(), '1.00' );
 
-		wp_add_inline_style( 'fixed-bottom-menu', $contents );
+			list( $fontsize, $fontsize_num, $fontsize_unit, $backcolor, $color, $overcolor, $minwidth, $zindex, $height, $height_a, $padding_top_a, $footer_class ) = $this->option_filters();
+
+			$this->column = apply_filters( 'fbm_column', $this->column );
+			$columns = $this->column;
+			$text_class = 'fixed-bottom-menu-text';
+
+			$template_css_file = apply_filters( 'fixed_bottom_menu_generate_template_css_file', plugin_dir_path( __DIR__ ) . 'template/' . $template_css_file_name );
+
+			ob_start();
+			include $template_css_file;
+			$contents = ob_get_contents();
+			ob_end_clean();
+
+			wp_add_inline_style( 'fixed-bottom-menu', $contents );
+		}
 	}
 
 	/** ==================================================
