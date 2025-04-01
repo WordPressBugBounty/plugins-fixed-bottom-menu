@@ -1,6 +1,6 @@
 {
   "name": "fixed-bottom-menu",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Fixed Bottom Menu",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,12 @@
   "author": "Katsushi Kawamori",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@wordpress/scripts": "30.4.0"
+    "@wordpress/scripts": "30.14.0"
   },
   "dependencies": {
-    "@wordpress/api-fetch": "^7.11.0",
-    "@wordpress/dom-ready": "^4.11.0",
-    "@wordpress/element": "^6.11.0",
-    "@wordpress/i18n": "^5.11.0"
+    "@wordpress/api-fetch": "^7.21.0",
+    "@wordpress/dom-ready": "^4.21.0",
+    "@wordpress/element": "^6.21.0",
+    "@wordpress/i18n": "^5.21.0"
   }
 }

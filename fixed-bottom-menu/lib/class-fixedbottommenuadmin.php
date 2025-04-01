@@ -19,6 +19,10 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 $fixedbottommenuadmin = new FixedBottomMenuAdmin();
 
 /** ==================================================
@@ -55,7 +59,7 @@ class FixedBottomMenuAdmin {
 			$this_plugin = 'fixed-bottom-menu/fixedbottommenu.php';
 		}
 		if ( $file === $this_plugin ) {
-			$links[] = '<a href="' . admin_url( 'options-general.php?page=fixedbottommenu' ) . '">' . __( 'Settings' ) . '</a>';
+			$links[] = '<a href="' . admin_url( 'options-general.php?page=fixedbottommenu' ) . '">' . __( 'Settings', 'fixed-bottom-menu' ) . '</a>';
 		}
 			return $links;
 	}
@@ -97,7 +101,7 @@ class FixedBottomMenuAdmin {
 	public function plugin_options() {
 
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_die( esc_html__( 'You do not have sufficient permissions to access this page.' ) );
+			wp_die( esc_html__( 'You do not have sufficient permissions to access this page.', 'fixed-bottom-menu' ) );
 		}
 
 		global $wp_version;
@@ -390,20 +394,20 @@ class FixedBottomMenuAdmin {
 			'credit',
 			array(
 				'links'          => __( 'Various links of this plugin', 'fixed-bottom-menu' ),
-				'plugin_version' => __( 'Version:' ) . ' ' . $plugin_ver_num,
+				'plugin_version' => __( 'Version:', 'fixed-bottom-menu' ) . ' ' . $plugin_ver_num,
 				/* translators: FAQ Link & Slug */
 				'faq'            => sprintf( __( 'https://wordpress.org/plugins/%s/faq', 'fixed-bottom-menu' ), $slug ),
 				'support'        => 'https://wordpress.org/support/plugin/' . $slug,
 				'review'         => 'https://wordpress.org/support/view/plugin-reviews/' . $slug,
 				'translate'      => 'https://translate.wordpress.org/projects/wp-plugins/' . $slug,
 				/* translators: Plugin translation link */
-				'translate_text' => sprintf( __( 'Translations for %s' ), $plugin_name ),
+				'translate_text' => sprintf( __( 'Translations for %s', 'fixed-bottom-menu' ), $plugin_name ),
 				'facebook'       => 'https://www.facebook.com/katsushikawamori/',
 				'twitter'        => 'https://twitter.com/dodesyo312',
 				'youtube'        => 'https://www.youtube.com/channel/UC5zTLeyROkvZm86OgNRcb_w',
 				'donate'         => __( 'https://shop.riverforest-wp.info/donate/', 'fixed-bottom-menu' ),
 				'donate_text'    => __( 'Please make a donation if you like my work or would like to further the development of this plugin.', 'fixed-bottom-menu' ),
-				'donate_button'  => __( 'Donate to this plugin &#187;' ),
+				'donate_button'  => __( 'Donate to this plugin &#187;', 'fixed-bottom-menu' ),
 			)
 		);
 	}

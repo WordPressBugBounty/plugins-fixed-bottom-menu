@@ -285,6 +285,7 @@ const FixedBottomMenuAdmin = () => {
 							<div className="inner-paragraph1">
 								<TextControl
 									__nextHasNoMarginBottom
+									__next40pxDefaultSize
 									label = "Kit"
 									value = { fontAwesome }
 									onChange = { ( value ) => updatefontAwesome( value ) }
@@ -337,6 +338,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Font Awesome : ' + __( 'Icon class', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { fAs1 }
 						onChange = { ( value ) => updatefAs1( value ) }
 						className = "icon_string"
@@ -349,6 +351,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Google Material Icons : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { mDi1 }
 						onChange = { ( value ) => updatemDi1( value ) }
 						className = "icon_string"
@@ -361,6 +364,7 @@ const FixedBottomMenuAdmin = () => {
 					<a className="aStyle" href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noopener noreferrer">{ 'Dashicon : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</a>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { daSh1 }
 						onChange = { ( value ) => updatedaSh1( value ) }
 						className = "icon_string"
@@ -374,6 +378,7 @@ const FixedBottomMenuAdmin = () => {
 				{ "URL" }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { uRl1 }
 					onChange = { ( value ) => updateuRl1( value ) }
 					className = "url_string"
@@ -381,6 +386,7 @@ const FixedBottomMenuAdmin = () => {
 				{ __( 'Text', 'fixed-bottom-menu' ) }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { teXt1 }
 					onChange = { ( value ) => updateteXt1( value ) }
 					className = "text_string"
@@ -403,6 +409,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Font Awesome : ' + __( 'Icon class', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { fAs2 }
 						onChange = { ( value ) => updatefAs2( value ) }
 						className = "icon_string"
@@ -415,6 +422,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Google Material Icons : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { mDi2 }
 						onChange = { ( value ) => updatemDi2( value ) }
 						className = "icon_string"
@@ -427,6 +435,7 @@ const FixedBottomMenuAdmin = () => {
 					<a className="aStyle" href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noopener noreferrer">{ 'Dashicon : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</a>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { daSh2 }
 						onChange = { ( value ) => updatedaSh2( value ) }
 						className = "icon_string"
@@ -440,6 +449,7 @@ const FixedBottomMenuAdmin = () => {
 				{ "URL" }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { uRl2 }
 					onChange = { ( value ) => updateuRl2( value ) }
 					className = "url_string"
@@ -447,6 +457,7 @@ const FixedBottomMenuAdmin = () => {
 				{ __( 'Text', 'fixed-bottom-menu' ) }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { teXt2 }
 					onChange = { ( value ) => updateteXt2( value ) }
 					className = "text_string"
@@ -469,6 +480,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Font Awesome : ' + __( 'Icon class', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { fAs3 }
 						onChange = { ( value ) => updatefAs3( value ) }
 						className = "icon_string"
@@ -481,6 +493,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Google Material Icons : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { mDi3 }
 						onChange = { ( value ) => updatemDi3( value ) }
 						className = "icon_string"
@@ -493,6 +506,7 @@ const FixedBottomMenuAdmin = () => {
 					<a className="aStyle" href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noopener noreferrer">{ 'Dashicon : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</a>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { daSh3 }
 						onChange = { ( value ) => updatedaSh3( value ) }
 						className = "icon_string"
@@ -506,6 +520,7 @@ const FixedBottomMenuAdmin = () => {
 				{ "URL" }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { uRl3 }
 					onChange = { ( value ) => updateuRl3( value ) }
 					className = "url_string"
@@ -513,6 +528,7 @@ const FixedBottomMenuAdmin = () => {
 				{ __( 'Text', 'fixed-bottom-menu' ) }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { teXt3 }
 					onChange = { ( value ) => updateteXt3( value ) }
 					className = "text_string"
@@ -535,6 +551,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Font Awesome : ' + __( 'Icon class', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { fAs4 }
 						onChange = { ( value ) => updatefAs4( value ) }
 						className = "icon_string"
@@ -547,6 +564,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Google Material Icons : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { mDi4 }
 						onChange = { ( value ) => updatemDi4( value ) }
 						className = "icon_string"
@@ -559,6 +577,7 @@ const FixedBottomMenuAdmin = () => {
 					<a className="aStyle" href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noopener noreferrer">{ 'Dashicon : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</a>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { daSh4 }
 						onChange = { ( value ) => updatedaSh4( value ) }
 						className = "icon_string"
@@ -572,6 +591,7 @@ const FixedBottomMenuAdmin = () => {
 				{ "URL" }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { uRl4 }
 					onChange = { ( value ) => updateuRl4( value ) }
 					className = "url_string"
@@ -579,6 +599,7 @@ const FixedBottomMenuAdmin = () => {
 				{ __( 'Text', 'fixed-bottom-menu' ) }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { teXt4 }
 					onChange = { ( value ) => updateteXt4( value ) }
 					className = "text_string"
@@ -601,6 +622,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Font Awesome : ' + __( 'Icon class', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { fAs5 }
 						onChange = { ( value ) => updatefAs5( value ) }
 						className = "icon_string"
@@ -613,6 +635,7 @@ const FixedBottomMenuAdmin = () => {
 					<>{ 'Google Material Icons : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { mDi5 }
 						onChange = { ( value ) => updatemDi5( value ) }
 						className = "icon_string"
@@ -625,6 +648,7 @@ const FixedBottomMenuAdmin = () => {
 					<a className="aStyle" href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noopener noreferrer">{ 'Dashicon : ' + __( 'Icon name', 'fixed-bottom-menu' ) }</a>
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { daSh5 }
 						onChange = { ( value ) => updatedaSh5( value ) }
 						className = "icon_string"
@@ -638,6 +662,7 @@ const FixedBottomMenuAdmin = () => {
 				{ "URL" }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { uRl5 }
 					onChange = { ( value ) => updateuRl5( value ) }
 					className = "url_string"
@@ -645,6 +670,7 @@ const FixedBottomMenuAdmin = () => {
 				{ __( 'Text', 'fixed-bottom-menu' ) }
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					value = { teXt5 }
 					onChange = { ( value ) => updateteXt5( value ) }
 					className = "text_string"
@@ -682,6 +708,7 @@ const FixedBottomMenuAdmin = () => {
 				items_font_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 20 }
 						min = { 8 }
 						step = { 0.1 }
@@ -695,6 +722,7 @@ const FixedBottomMenuAdmin = () => {
 				items_font_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 3 }
 						min = { 0.5 }
 						step = { 0.1 }
@@ -708,6 +736,7 @@ const FixedBottomMenuAdmin = () => {
 				items_font_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 3 }
 						min = { 0.5 }
 						step = { 0.1 }
@@ -724,6 +753,7 @@ const FixedBottomMenuAdmin = () => {
 				items_lineheight_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 60 }
 						min = { 30 }
 						step = { 0.1 }
@@ -737,6 +767,7 @@ const FixedBottomMenuAdmin = () => {
 				items_lineheight_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 3 }
 						min = { 0.5 }
 						step = { 0.1 }
@@ -750,6 +781,7 @@ const FixedBottomMenuAdmin = () => {
 				items_lineheight_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 3 }
 						min = { 0.5 }
 						step = { 0.1 }
@@ -766,6 +798,7 @@ const FixedBottomMenuAdmin = () => {
 				items_lineheighta_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 15 }
 						min = { 5 }
 						step = { 0.1 }
@@ -779,6 +812,7 @@ const FixedBottomMenuAdmin = () => {
 				items_lineheighta_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 3 }
 						min = { 0.5 }
 						step = { 0.1 }
@@ -792,6 +826,7 @@ const FixedBottomMenuAdmin = () => {
 				items_lineheighta_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 3 }
 						min = { 0.5 }
 						step = { 0.1 }
@@ -808,6 +843,7 @@ const FixedBottomMenuAdmin = () => {
 				items_paddingtopa_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 10 }
 						min = { 1 }
 						step = { 0.1 }
@@ -821,6 +857,7 @@ const FixedBottomMenuAdmin = () => {
 				items_paddingtopa_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 1 }
 						min = { 0.1 }
 						step = { 0.05 }
@@ -834,6 +871,7 @@ const FixedBottomMenuAdmin = () => {
 				items_paddingtopa_range.push(
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 1 }
 						min = { 0.1 }
 						step = { 0.05 }
@@ -976,6 +1014,7 @@ const FixedBottomMenuAdmin = () => {
 				<td colspan="2">
 					<TextControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						value = { footerClass }
 						onChange = { ( value ) => updatefooterClass( value ) }
 						className = "text_string"
@@ -1016,6 +1055,7 @@ const FixedBottomMenuAdmin = () => {
 				<td colspan="2">
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 10000 }
 						min = { 768 }
 						step = { 1 }
@@ -1031,6 +1071,7 @@ const FixedBottomMenuAdmin = () => {
 				<td colspan="2">
 					<RangeControl
 						__nextHasNoMarginBottom
+						__next40pxDefaultSize
 						max = { 100 }
 						min = { -100 }
 						step = { 1 }
@@ -1049,11 +1090,11 @@ const FixedBottomMenuAdmin = () => {
 	if ( typeof temPlate !== 'undefined' ) {
 		items_templates.push(
 			<SelectControl
-				__nextHasNoMarginBottom
 				value = { temPlate }
 				options={ fixedbottommenu_template_label_value }
 				onChange={  ( value ) => updatetemPlate( value ) }
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 			/>
 		);
 	}
