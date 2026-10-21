@@ -5,7 +5,7 @@ Tags: fixed, menu
 Requires at least: 6.6
 Requires PHP: 8.0
 Tested up to: 7.1
-Stable tag: 2.15
+Stable tag: 2.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -119,6 +119,9 @@ none
 3. Edit settings
 
 == Changelog ==
+
+= [2.16] 2026/10/21 =
+* Changed - Removed the instructions regarding add-ons.
 
 = [2.15] 2025/04/01 =
 * Fix - Rebuilt javascript.

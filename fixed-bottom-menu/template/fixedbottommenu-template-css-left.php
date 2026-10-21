@@ -8,6 +8,10 @@
  * @version 1.00
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 ?>
 #fixed-left-menu {
   line-height: <?php echo esc_attr( $height ); ?>;

@@ -8,6 +8,10 @@
  * @version 1.00
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 ?>
 
 #fixed-top-menu {

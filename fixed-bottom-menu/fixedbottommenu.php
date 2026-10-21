@@ -3,7 +3,7 @@
  * Plugin Name: Fixed Bottom Menu
  * Plugin URI:  https://wordpress.org/plugins/fixed-bottom-menu/
  * Description: Add a fixed menu. The basic menu is at the bottom, but it can also be displayed on the top, left, and right.
- * Version:     2.15
+ * Version:     2.16
  * Author:      Katsushi Kawamori
  * Author URI:  https://riverforest-wp.info/
  * License:     GPLv2 or later
@@ -28,6 +28,10 @@
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 if ( ! class_exists( 'FixedBottomMenu' ) ) {
 	require_once __DIR__ . '/lib/class-fixedbottommenu.php';

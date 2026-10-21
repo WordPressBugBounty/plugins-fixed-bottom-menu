@@ -8,6 +8,10 @@
  * @version 1.02
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 ?>
 
 <ul class="fixed-bottom-menu">

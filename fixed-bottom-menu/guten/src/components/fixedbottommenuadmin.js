@@ -201,48 +201,7 @@ const FixedBottomMenuAdmin = () => {
 	}, [ daSh1, daSh2, daSh3, daSh4, daSh5, uRl1, teXt1, uRl2, teXt2, uRl3, teXt3, uRl4, teXt4, uRl5, teXt5, backColor, coLor, overColor, minWidth, zIndex, footerClass, fontSizeflag, fontSizepx, fontSizerem, fontSizeem, lineHeightflag, lineHeightpx, lineHeightrem, lineHeightem, lineHeightaflag, lineHeightapx, lineHeightarem, lineHeightaem, paddingTopaflag, paddingTopapx, paddingToparem, paddingTopaem, temPlate, coLumun, fontAwesome, materialDesignicons, addonType, fAs1, fAs2, fAs3, fAs4, fAs5, mDi1, mDi2, mDi3, mDi4, mDi5 ] );
 
 	const items_addons = [];
-	if ( ! fixedbottommenu_addon ) {
-		items_addons.push(
-			<details className="detailsStyle">
-				<summary className="summaryStyle">{ __( 'Add on', 'fixed-bottom-menu' ) }</summary>
-				<div className="detailsdivStyle">
-					<h3>Fixed Bottom Menu Add On Icon</h3>
-					<p className="description">
-						{ __( 'Sell add-ons that add the following icons.', 'fixed-bottom-menu' ) }
-					</p>
-					<div className="inner-paragraph1">
-						<Button
-							variant = "secondary"
-							href = "https://fontawesome.com/"
-							target = "_blank"
-							rel = "noopener noreferrer"
-						>
-						Font Awesome
-						</Button>
-						&nbsp;&nbsp;
-						<Button
-							variant = "secondary"
-							href = "https://material.io/resources/icons/"
-							target = "_blank"
-							rel = "noopener noreferrer"
-						>
-						Google Material Icons
-						</Button>
-					</div>
-					<div className="inner-paragraph2">
-						<Button
-							variant = "primary"
-							href = { __( 'https://shop.riverforest-wp.info/fixed-bottom-menu-add-on-icon/', 'fixed-bottom-menu' ) }
-							target = "_blank"
-							rel = "noopener noreferrer"
-						>
-						{ __( 'BUY', 'fixed-bottom-menu' ) }
-						</Button>
-					</div>
-				</div>
-			</details>
-		);
-	} else {
+	if ( fixedbottommenu_addon ) {
 		if ( typeof addonType !== 'undefined' ) {
 			let type_text = '';
 			switch ( addonType ) {
